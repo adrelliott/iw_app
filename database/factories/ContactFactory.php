@@ -22,7 +22,12 @@ class ContactFactory extends Factory
     public function definition()
     {
         return [
-            //
+            'pplus_ref' => $this->faker->regexify('[0-9a-zA-Z]{6}'),
+            'sib_ref' => rand(1000, 9999),
+            // 'woocom_ref' => rand(1000,9999),
+            'first_name' => $this->faker->firstName(),
+            'last_name' => $this->faker->lastName(),
+            'email' => $this->faker->unique()->safeEmail(),
         ];
     }
 }

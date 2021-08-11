@@ -13,6 +13,10 @@ class BrandSeeder extends Seeder
      */
     public function run()
     {
-        //
+        \App\Models\Brand::insert([
+            ['name' => 'Nova'],
+            ['name' => 'Imaging Warehouse'],
+            ['name' => 'Permajet'],
+        ]);
     }
 }

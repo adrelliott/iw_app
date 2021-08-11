@@ -13,7 +13,7 @@ class CreateBusinessTypeTable extends Migration
      */
     public function up()
     {
-        Schema::create('businesstype', function (Blueprint $table) {
+        Schema::create('businesstypes', function (Blueprint $table) {
             $table->id();
             $table->string('name');
             $table->timestamps();
@@ -28,6 +28,6 @@ class CreateBusinessTypeTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('businesstype');
+        Schema::dropIfExists('businesstypes');
     }
 }

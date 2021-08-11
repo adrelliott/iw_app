@@ -13,6 +13,10 @@ class RoleSeeder extends Seeder
      */
     public function run()
     {
-        //
+        \App\Models\Role::insert([
+            ['name' => 'SuperAdmin'],
+            ['name' => 'Admin'],
+            ['name' => 'User'],
+        ]);
     }
 }

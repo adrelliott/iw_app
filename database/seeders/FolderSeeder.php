@@ -13,6 +13,8 @@ class FolderSeeder extends Seeder
      */
     public function run()
     {
-        //
+        \App\Models\Folder::factory(5)
+            ->hasSiblists(4)
+            ->create();
     }
 }

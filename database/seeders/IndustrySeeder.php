@@ -13,6 +13,11 @@ class IndustrySeeder extends Seeder
      */
     public function run()
     {
-        //
+        \App\Models\Industry::insert([
+            ['name' => 'Lab'],
+            ['name' => 'Education'],
+            ['name' => 'Printing'],
+            ['name' => 'Hobby'],
+        ]);
     }
 }

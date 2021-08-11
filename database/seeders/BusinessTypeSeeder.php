@@ -13,6 +13,12 @@ class BusinessTypeSeeder extends Seeder
      */
     public function run()
     {
-        //
+        \App\Models\BusinessType::insert([
+            ['name' => 'School'],
+            ['name' => 'University'],
+            ['name' => 'Reseller'],
+            ['name' => 'Personal'],
+            ['name' => 'Company'],
+        ]);
     }
 }

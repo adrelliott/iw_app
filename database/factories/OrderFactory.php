@@ -22,7 +22,9 @@ class OrderFactory extends Factory
     public function definition()
     {
         return [
-            //
+            'brand_id' => rand(1, 3),
+            'total' => rand(2000, 20000),
+            'ordered_at' => now()
         ];
     }
 }

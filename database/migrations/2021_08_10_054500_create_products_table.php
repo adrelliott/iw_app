@@ -16,7 +16,7 @@ class CreateProductsTable extends Migration
         Schema::create('products', function (Blueprint $table) {
             $table->id();
             $table->string('pplus_ref')->nullable();
-            $table->string('sib_ref')->nullable();
+            $table->string('woocom_ref')->nullable();
             $table->string('name')->nullable();
             $table->string('description')->nullable();
             $table->integer('price');

@@ -18,9 +18,9 @@ class CreateOrdersTable extends Migration
             $table->string('pplus_ref')->nullable();
             $table->string('sib_ref')->nullable();
             $table->foreignId('contact_id')->constrained();
-            $table->foreignId('brand_id')->constrained();
-            $table->integer('total');
-            $table->timestamp('ordered_at');
+            $table->foreignId('brand_id')->nullable()->constrained();
+            $table->integer('total')->default(0);
+            $table->timestamp('ordered_at')->default(now());
             $table->timestamp('dispatched_at')->nullable();
             $table->timestamps();
             $table->softDeletes();

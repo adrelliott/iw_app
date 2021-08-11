@@ -13,6 +13,10 @@ class ContactSeeder extends Seeder
      */
     public function run()
     {
-        //
+        // $industries = \App\Models\Industry::all();
+        // $brands = \App\Models\Brand::all();
+        // $businesstypes = \App\Models\BusinessType::all();
+
+        $contacts = \App\Models\Contact::factory(500)->create();
     }
 }

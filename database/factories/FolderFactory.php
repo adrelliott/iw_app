@@ -22,7 +22,9 @@ class FolderFactory extends Factory
     public function definition()
     {
         return [
-            //
+            'sib_ref' => rand(200, 900),
+            'name' => implode(' ', $this->faker->words(3)),
+            'description' => $this->faker->sentence(),
         ];
     }
 }
